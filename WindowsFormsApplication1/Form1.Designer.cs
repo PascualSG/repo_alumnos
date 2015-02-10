@@ -35,8 +35,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tNombre = new System.Windows.Forms.TextBox();
             this.tNota = new System.Windows.Forms.TextBox();
-            this.tLista = new System.Windows.Forms.TextBox();
             this.tNotaMedia = new System.Windows.Forms.TextBox();
+            this.lLista = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
@@ -99,15 +99,6 @@
             this.tNota.Size = new System.Drawing.Size(100, 20);
             this.tNota.TabIndex = 6;
             // 
-            // tLista
-            // 
-            this.tLista.Location = new System.Drawing.Point(40, 98);
-            this.tLista.Multiline = true;
-            this.tLista.Name = "tLista";
-            this.tLista.ReadOnly = true;
-            this.tLista.Size = new System.Drawing.Size(674, 157);
-            this.tLista.TabIndex = 7;
-            // 
             // tNotaMedia
             // 
             this.tNotaMedia.Location = new System.Drawing.Point(614, 288);
@@ -116,13 +107,21 @@
             this.tNotaMedia.Size = new System.Drawing.Size(100, 20);
             this.tNotaMedia.TabIndex = 8;
             // 
+            // lLista
+            // 
+            this.lLista.FormattingEnabled = true;
+            this.lLista.Location = new System.Drawing.Point(40, 107);
+            this.lLista.Name = "lLista";
+            this.lLista.Size = new System.Drawing.Size(661, 147);
+            this.lLista.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 328);
+            this.Controls.Add(this.lLista);
             this.Controls.Add(this.tNotaMedia);
-            this.Controls.Add(this.tLista);
             this.Controls.Add(this.tNota);
             this.Controls.Add(this.tNombre);
             this.Controls.Add(this.label4);
@@ -146,8 +145,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tNombre;
         private System.Windows.Forms.TextBox tNota;
-        private System.Windows.Forms.TextBox tLista;
         private System.Windows.Forms.TextBox tNotaMedia;
+        private System.Windows.Forms.ListBox lLista;
     }
 }
 

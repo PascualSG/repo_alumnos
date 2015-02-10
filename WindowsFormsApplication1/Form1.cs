@@ -54,8 +54,8 @@ namespace WindowsFormsApplication1
             }
 
             //Montamos el resultado para mostralo en el textBox correspondiente
-            lista = lista + alum.Nombre + " " + alum.Nota + " " + resultado + "\r\n";
-            tLista.Text = lista;
+            lista = alum.Nombre + " " + alum.Nota + " " + resultado + "\r\n";
+            lLista.Items.Add(lista);
 
             //Calculo la nota media llamando al método de la clase Alumnos.
             //Muestro el resultado en el textoBox de la Nota media.
