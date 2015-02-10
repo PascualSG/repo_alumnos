@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
         /// <summary>
         /// Creamos e inicializamos un campo privado llamado listaAlumnos de tipo ArrayList
         /// </summary>
-        private ArrayList listaAlumnos = new ArrayList();
+        public ArrayList listaAlumnos = new ArrayList();
 
         /// <summary>
         /// Creamos una propiedad de tipo ArrayList llamada ListaAlumnos,

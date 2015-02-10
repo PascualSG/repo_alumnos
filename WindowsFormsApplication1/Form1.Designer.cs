@@ -37,6 +37,7 @@
             this.tNota = new System.Windows.Forms.TextBox();
             this.tLista = new System.Windows.Forms.TextBox();
             this.tNotaMedia = new System.Windows.Forms.TextBox();
+            this.total = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -116,11 +117,20 @@
             this.tNotaMedia.Size = new System.Drawing.Size(100, 20);
             this.tNotaMedia.TabIndex = 8;
             // 
+            // total
+            // 
+            this.total.Location = new System.Drawing.Point(40, 287);
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
+            this.total.Size = new System.Drawing.Size(100, 20);
+            this.total.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 328);
+            this.Controls.Add(this.total);
             this.Controls.Add(this.tNotaMedia);
             this.Controls.Add(this.tLista);
             this.Controls.Add(this.tNota);
@@ -148,6 +158,7 @@
         private System.Windows.Forms.TextBox tNota;
         private System.Windows.Forms.TextBox tLista;
         private System.Windows.Forms.TextBox tNotaMedia;
+        private System.Windows.Forms.TextBox total;
     }
 }
 

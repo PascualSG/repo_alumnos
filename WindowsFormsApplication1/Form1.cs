@@ -40,6 +40,8 @@ namespace WindowsFormsApplication1
             //Llamamos al método AgregarAlumno para que añada el objeto (alum)
             alumno.AgregarAlumno(alum);
 
+            total.Text = alumno.listaAlumnos.Count.ToString();  
+
             tNombre.Clear();
             tNota.Clear();
 
