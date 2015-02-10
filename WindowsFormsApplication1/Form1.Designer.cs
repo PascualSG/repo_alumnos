@@ -34,9 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tNombre = new System.Windows.Forms.TextBox();
-            this.tNota = new System.Windows.Forms.TextBox();
             this.tLista = new System.Windows.Forms.TextBox();
             this.tNotaMedia = new System.Windows.Forms.TextBox();
+            this.numericnota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericnota)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -92,13 +93,6 @@
             this.tNombre.Size = new System.Drawing.Size(289, 20);
             this.tNombre.TabIndex = 5;
             // 
-            // tNota
-            // 
-            this.tNota.Location = new System.Drawing.Point(382, 35);
-            this.tNota.Name = "tNota";
-            this.tNota.Size = new System.Drawing.Size(100, 20);
-            this.tNota.TabIndex = 6;
-            // 
             // tLista
             // 
             this.tLista.Location = new System.Drawing.Point(40, 98);
@@ -116,14 +110,26 @@
             this.tNotaMedia.Size = new System.Drawing.Size(100, 20);
             this.tNotaMedia.TabIndex = 8;
             // 
+            // numericnota
+            // 
+            this.numericnota.Location = new System.Drawing.Point(382, 35);
+            this.numericnota.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericnota.Name = "numericnota";
+            this.numericnota.Size = new System.Drawing.Size(120, 20);
+            this.numericnota.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 328);
+            this.Controls.Add(this.numericnota);
             this.Controls.Add(this.tNotaMedia);
             this.Controls.Add(this.tLista);
-            this.Controls.Add(this.tNota);
             this.Controls.Add(this.tNombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -132,6 +138,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numericnota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,9 +152,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tNombre;
-        private System.Windows.Forms.TextBox tNota;
         private System.Windows.Forms.TextBox tLista;
         private System.Windows.Forms.TextBox tNotaMedia;
+        private System.Windows.Forms.NumericUpDown numericnota;
     }
 }
 

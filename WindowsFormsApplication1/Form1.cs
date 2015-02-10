@@ -35,13 +35,13 @@ namespace WindowsFormsApplication1
 
             //Asignamos lo que nos viene de los textBox
             alum.Nombre = tNombre.Text;
-            alum.Nota = int.Parse(tNota.Text);
+            alum.Nota = int.Parse(numericnota.Text);
 
             //Llamamos al método AgregarAlumno para que añada el objeto (alum)
             alumno.AgregarAlumno(alum);
 
             tNombre.Clear();
-            tNota.Clear();
+            //tNota.Clear();
 
             //Hago un if para mostrar si la nota introducida es Aprobado o Suspenso
             if (alum.Aprobado == true)
